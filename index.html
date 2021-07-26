@@ -1,28 +1,17 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>二列布局</title>
-  <style>
-      body{ margin:0; padding:0;}
-	  .top{ width:100%;height:70%; background:red; float:left; color: #fff;}
-          .left{ width:50%; height:30%; background:blue; float:left; color: #fff;}
-          .right{ width:50%; height:20%; background:#ccc; float:right; } 
-	  .body1{width:100%;height:10%; background:yellow; float:left; color: #fff;}
-	  .body2{width:100%;height:10%; background:black; float:left; color: #fff;}
-	  /*自适应宽度width*/
-      
-   </style>
- </head>
- <body>
-	 <div class="top">top</div>
-	 <div class="left">left</div>
-	 <div class="right">right</div>
-	 <div class="body1">body1</div>
-	 <div class="body2">body2</div>
- </body>
+<html>
+<head>
+<title>div 分辨率自适应</title>
+<style type="text/css">
+html,body{height:100%; width:100%; overflow:hidden; margin:0; padding:0;}
+.main{width:100%; height:100%; overflow:hidden; margin:0; padding:0;}
+.a1{position:absolute;width:80%; height:100px; color:#fff; background-color:#369; text-align:center;}
+.a2{position:absolute;width:20%; height:100%; color:#fff; background-color:#FF0000; text-align:center;left:80%;}
+</style>
+</head>
+<body>
+<div class="a1">div1</div>
+<div class="main">
+<div class="a2">div2</div>
+</div>
+</body>
 </html>
